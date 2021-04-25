@@ -4,11 +4,11 @@ import { nanoid } from 'nanoid';
 const SquareFlex = ({ squareSize }) => {
   const printNewNumber = event => {
     const newNumber = Math.floor(Math.random() * 11);
-    if (event.target.value) {
+    if (event.target.innerText) {
       alert('Sorry, this square is already taken');
       return;
     }
-    event.target.value = newNumber;
+    event.target.innerText = newNumber;
   };
   return (
     <div>
@@ -21,9 +21,7 @@ const SquareFlex = ({ squareSize }) => {
                   className="flex-item"
                   onClick={printNewNumber}
                   key={nanoid()}
-                >
-                  <input type="number"></input>
-                </div>
+                ></div>
               );
             })}
           </div>
