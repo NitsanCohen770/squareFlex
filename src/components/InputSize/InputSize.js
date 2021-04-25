@@ -16,6 +16,7 @@ const InputSize = ({ squareFlexSizeSelected }) => {
         <FormControl
           aria-label="Large"
           aria-describedby="inputGroup-sizing-sm"
+          defaultValue="3"
         />
       </InputGroup>
     </div>

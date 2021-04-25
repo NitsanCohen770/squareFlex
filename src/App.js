@@ -4,13 +4,13 @@ import InputSize from './components/InputSize/InputSize';
 import SquareFlex from './components/squareFlex/SquareFlex';
 
 function App() {
-  const [squareSize, setsquareSize] = useState([1, 1, 1]);
+  const [squareSize, setSquareSize] = useState([1, 1, 1]);
   const onSelectSize = squaresSize => {
-    const arrayList = [];
+    const squareSizeArray = [];
     for (let i = 0; i < squaresSize; i++) {
-      arrayList.push(1);
+      squareSizeArray.push(1);
     }
-    setsquareSize(arrayList);
+    setSquareSize(squareSizeArray);
   };
   return (
     <div>
